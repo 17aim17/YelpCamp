@@ -39,9 +39,8 @@ app.use(flash());
   passport.serializeUser(User.serializeUser());
   passport.deserializeUser(User.deserializeUser());
  
-  
-  
-mongoose.connect("mongodb://unreal:unreal123@ds157522.mlab.com:57522/yelp_camp");
+mongoose.connect(process.env.DATABASEURL);
+//mongoose.connect("mongodb://unreal:unreal123@ds157522.mlab.com:57522/yelp_camp");
 app.set('view engine' ,"ejs");
 app.use(bodyParser.urlencoded({extended :true }));
 app.use(express.static(__dirname +"/public"));
