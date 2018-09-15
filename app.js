@@ -41,7 +41,7 @@ app.use(flash());
  
   
   
-mongoose.connect("mongodb://penzero:Ashish2703@ds157522.mlab.com:57522/yelp_camp");
+mongoose.connect("mongodb://unreal:unreal123@ds157522.mlab.com:57522/yelp_camp");
 app.set('view engine' ,"ejs");
 app.use(bodyParser.urlencoded({extended :true }));
 app.use(express.static(__dirname +"/public"));
