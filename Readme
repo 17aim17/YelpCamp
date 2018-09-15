@@ -1,0 +1,17 @@
+for comments 
+
+create two routes 
+1.) new coment form
+2.) and route where actually we add it to database
+
+==> using nested roures
+new =>     campgrounds/:id/comments/new   GET
+create=>   campgrounds/:id/comments/new   POST
+
+
+====================Authentication
+passport-local is simply for Username and password authentication
+passport-local-monggose specially made for spacially use with moongoose
+make user modal 
+
+
